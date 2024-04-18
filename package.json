@@ -7,8 +7,8 @@
     "start": "webpack-dev-server --open --mode development",
     "start-prod": "node app.js",
     "test": "jest",
-    "eslint": "eslint ./**/*.{js,jsx}",
-    "eslint-fix": "eslint --fix .",
+    "eslint": "eslint ./**/*.{js,jsx} --rule no-console:'off'",
+    "eslint-fix": "eslint --fix . --rule no-console:'off'",
     "build": "webpack --mode production"
   },
   "repository": {
